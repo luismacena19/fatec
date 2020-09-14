@@ -9,7 +9,7 @@ int carac(char c,char s[]) {
 }
 int main(){
 
-    char s[30],c;
+    char s[100],c;
     int tamanho = 0;
     
     printf("\nDigite uma string sem espaços: ");
