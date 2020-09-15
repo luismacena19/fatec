@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int tamanho(char s[]){
+int tamstring(char s[]){
 	if(s[0] == '\0')
 	return 0;
-	return 1+tamanho(&s[1]);
+	return 1+tamstring(&s[1]);
 }
 
 int main(){
 
 	char s[100];
-	int size = 0;
+	int tamanho = 0;
 	
-	printf("\nDigite uma string sem espaços: \n");
+	printf("\nDigite uma string sem espaços: ");
 	scanf("%s", s);
 	
-	size = tamanho(s);
+	tamanho = tamstring(s);
 	
-	printf("\nA string tem tamanho = %i\n", size);
+	printf("\nA string tem tamanho = %i\n", tamanho);
 
 	return 0;
 }

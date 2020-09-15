@@ -10,11 +10,12 @@ void reverse(char s[]) {
 
 int main(){
     
-    char s[30],c;
+    char s[100],c;
     int t;
     
-    printf("\nDigite uma string sem espaço a ser espelhada: ");
-    scanf("%s",s);
+    printf("\nDigite uma string sem espaço a ser revertida: ");
+    scanf("%s",&s);
+    printf("\nO reverso de %s, é ", s);
     reverse(s);
     printf("\n");
     return 0;
